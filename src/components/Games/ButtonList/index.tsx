@@ -7,7 +7,7 @@ const ButtonList = () => {
     ViewModel();
 
   return (
-    <div className="sticky top-[56px] bg-white">
+    <div className="sticky top-[56px] bg-white z-20">
       <div className="flex items-center h-auto w-full px-4">
         <button onClick={handleSearchActive}>
           <div className="pr-2 py-1 relative">

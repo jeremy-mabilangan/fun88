@@ -1,43 +1,151 @@
-import anaconda from "../../../common/assets/game_icons/anaconda_wild_2.webp";
-import azteca from "../../../common/assets/game_icons/azteca.webp";
-import beach_life from "../../../common/assets/game_icons/beach_life.webp";
-import big_bad_wolf from "../../../common/assets/game_icons/big_bad_wolf.webp";
-import book_of_egypt from "../../../common/assets/game_icons/book_of_egypt.webp";
-import crocodile_butz from "../../../common/assets/game_icons/crocodile_butz.webp";
-import pride_of_persia from "../../../common/assets/game_icons/pride_of_persia.webp";
-import inca_jackpot from "../../../common/assets/game_icons/inca_jackpot.webp";
-import maya_jackpot from "../../../common/assets/game_icons/maya_jackpot.webp";
-import pirates_power from "../../../common/assets/game_icons/pirates_power.webp";
-import shaolin_crew from "../../../common/assets/game_icons/shaolin_crew.webp";
-import sugar_rush from "../../../common/assets/game_icons/sugar_rush.webp";
-
 import { IGames } from "../../../common/types/games";
+const PUBLIC_URL = process.env.PUBLIC_URL;
 
 const List: IGames[] = [
-  { name: "Anaconda Wild 2", img: anaconda },
-  { name: "Azteca", img: azteca },
-  { name: "Beach Life", img: beach_life },
-  { name: "Big Bad Wold", img: big_bad_wolf },
-  { name: "Book of Egypt", img: book_of_egypt },
-  { name: "Crocodile Butz", img: crocodile_butz },
-  { name: "Pride of Persia", img: pride_of_persia },
-  { name: "Inca Jackpot", img: inca_jackpot },
-  { name: "Maya Jackpot", img: maya_jackpot },
-  { name: "Pirates Power", img: pirates_power },
-  { name: "Shaolin Crew", img: shaolin_crew },
-  { name: "Sugar Rush", img: sugar_rush },
-  { name: "Anaconda Wild 2", img: anaconda },
-  { name: "Azteca", img: azteca },
-  { name: "Beach Life", img: beach_life },
-  { name: "Big Bad Wold", img: big_bad_wolf },
-  { name: "Book of Egypt", img: book_of_egypt },
-  { name: "Crocodile Butz", img: crocodile_butz },
-  { name: "Pride of Persia", img: pride_of_persia },
-  { name: "Inca Jackpot", img: inca_jackpot },
-  { name: "Maya Jackpot", img: maya_jackpot },
-  { name: "Pirates Power", img: pirates_power },
-  { name: "Shaolin Crew", img: shaolin_crew },
-  { name: "Sugar Rush", img: sugar_rush },
+  {
+    id: 1,
+    name: "Anaconda Wild 2",
+    img: `${PUBLIC_URL}/assets/game_icons/anaconda-wild-2.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 2,
+    name: "Azteca Bonus Lines",
+    img: `${PUBLIC_URL}/assets/game_icons/azteca-bonus-lines.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 3,
+    name: "Beach Life",
+    img: `${PUBLIC_URL}/assets/game_icons/beach-life.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 4,
+    name: "Big Bad Wolf",
+    img: `${PUBLIC_URL}/assets/game_icons/big-bad-wolf.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 5,
+    name: "Book of Egypt",
+    img: `${PUBLIC_URL}/assets/game_icons/book-of-egypt.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 6,
+    name: "Crocodile Blitz",
+    img: `${PUBLIC_URL}/assets/game_icons/crocodile-blitz.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 7,
+    name: "Pride of Persia",
+    img: `${PUBLIC_URL}/assets/game_icons/pride-of-persia.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 8,
+    name: "Inca Jackpot",
+    img: `${PUBLIC_URL}/assets/game_icons/inca-jackpot.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 9,
+    name: "Maya Jackpot",
+    img: `${PUBLIC_URL}/assets/game_icons/maya-jackpot.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 10,
+    name: "Pirates Power",
+    img: `${PUBLIC_URL}/assets/game_icons/pirates-power.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 11,
+    name: "Shaolin Crew",
+    img: `${PUBLIC_URL}/assets/game_icons/shaolin-crew.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 12,
+    name: "Sugar Rush",
+    img: `${PUBLIC_URL}/assets/game_icons/sugar-rush.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 13,
+    name: "Anaconda Wild 2",
+    img: `${PUBLIC_URL}/assets/game_icons/anaconda-wild-2.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 14,
+    name: "Azteca Bonus Lines",
+    img: `${PUBLIC_URL}/assets/game_icons/azteca-bonus-lines.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 15,
+    name: "Beach Life",
+    img: `${PUBLIC_URL}/assets/game_icons/beach-life.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 16,
+    name: "Big Bad Wolf",
+    img: `${PUBLIC_URL}/assets/game_icons/big-bad-wolf.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 17,
+    name: "Book of Egypt",
+    img: `${PUBLIC_URL}/assets/game_icons/book-of-egypt.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 18,
+    name: "Crocodile Blitz",
+    img: `${PUBLIC_URL}/assets/game_icons/crocodile-blitz.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 19,
+    name: "Pride of Persia",
+    img: `${PUBLIC_URL}/assets/game_icons/pride-of-persia.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 20,
+    name: "Inca Jackpot",
+    img: `${PUBLIC_URL}/assets/game_icons/inca-jackpot.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 21,
+    name: "Maya Jackpot",
+    img: `${PUBLIC_URL}/assets/game_icons/maya-jackpot.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 22,
+    name: "Pirates Power",
+    img: `${PUBLIC_URL}/assets/game_icons/pirates-power.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 23,
+    name: "Shaolin Crew",
+    img: `${PUBLIC_URL}/assets/game_icons/shaolin-crew.webp`,
+    isFavorite: false,
+  },
+  {
+    id: 24,
+    name: "Sugar Rush",
+    img: `${PUBLIC_URL}/assets/game_icons/sugar-rush.webp`,
+    isFavorite: false,
+  },
 ];
 
 export default List;
