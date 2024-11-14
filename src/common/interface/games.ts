@@ -1,11 +1,7 @@
 export interface IGames {
   id: number;
   name: string;
-  img: any;
+  category?: string;
+  img: string;
   isFavorite: boolean;
-}
-
-export interface IProviders {
-  id: number;
-  img: any;
 }

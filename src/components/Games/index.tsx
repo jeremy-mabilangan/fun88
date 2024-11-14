@@ -1,13 +1,13 @@
-import ButtonList from "./ButtonList";
+import Categories from "./Categories";
 import GameMenu from "./GameMenu";
 import GameProvider from "./GameProvider";
 
 const Games = () => {
   return (
     <>
-      <ButtonList />
+      <Categories />
       <GameMenu />
-      {/* <GameProvider /> */}
+      <GameProvider />
     </>
   );
 };

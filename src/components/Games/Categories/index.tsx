@@ -2,9 +2,15 @@ import { ReactComponent as Search } from "../../../common/assets/icons/search.sv
 import { ReactComponent as SearchMenu } from "../../../common/assets/icons/search_menu.svg";
 import ViewModel from "./useViewModel";
 
-const ButtonList = () => {
-  const { buttons, handleSetActiveButton, searchActive, handleSearchActive } =
-    ViewModel();
+const Categories = () => {
+  const {
+    buttons,
+    handleSetActiveCategories,
+    searchActive,
+    handleSearchActive,
+    handleSearch,
+    handleOpenGameProvider,
+  } = ViewModel();
 
   return (
     <div className="sticky top-[56px] bg-white z-20">
@@ -35,7 +41,7 @@ const ButtonList = () => {
             <button
               className="w-auto"
               key={index}
-              onClick={() => handleSetActiveButton(title)}
+              onClick={() => handleSetActiveCategories(title)}
             >
               <div className="px-2 pt-1 pb-1 relative">
                 <div className="flex justify-center">
@@ -46,7 +52,7 @@ const ButtonList = () => {
                   />
                 </div>
                 <p
-                  className={`text-base text-nowrap ${
+                  className={`text-base text-nowrap uppercase ${
                     active && !searchActive
                       ? "text-primary-color underline underline-offset-2 decoration-2"
                       : "text-secondary-color"
@@ -69,11 +75,13 @@ const ButtonList = () => {
               type="text"
               className="w-full  flex bg-transparent text-secondary-color outline-0"
               placeholder="Search games"
+              onChange={handleSearch}
             />
           </div>
           <button
             type="submit"
             className="relative p-2 rounded-md ring-1 ring-secondary-color"
+            onClick={handleOpenGameProvider}
           >
             <SearchMenu color="#808080" />
           </button>
@@ -83,4 +91,4 @@ const ButtonList = () => {
   );
 };
 
-export default ButtonList;
+export default Categories;
