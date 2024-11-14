@@ -6,7 +6,7 @@ import divider from "../../common/assets/icons/divider.svg";
 
 const TopNavbar = () => {
   return (
-    <div className="flex justify-between h-14 w-full fixed top-0 shadow-lg px-1 bg-white">
+    <div className="flex justify-between h-14 w-full fixed top-0 shadow-lg px-1 bg-white z-20">
       <div className="flex items-center">
         <button className="py-1 px-2">
           <img className="h-[18px] w-5" alt="Menu Icon" src={menu} />

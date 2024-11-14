@@ -1,8 +1,9 @@
 import { TopNavbar, BottomNavbar, Banner, Games } from "../../components";
+import { HomepageProvider } from "../../common/provider/HomepageProvider";
 
 const Homepage = () => {
   return (
-    <div>
+    <HomepageProvider>
       <header>
         <TopNavbar />
       </header>
@@ -17,7 +18,7 @@ const Homepage = () => {
       <footer className="w-full fixed bottom-0">
         <BottomNavbar />
       </footer>
-    </div>
+    </HomepageProvider>
   );
 };
 

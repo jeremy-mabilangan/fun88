@@ -4,7 +4,7 @@ import { ReactComponent as Invite } from "../../common/assets/icons/invite.svg";
 import { ReactComponent as Live } from "../../common/assets/icons/live.svg";
 import { ReactComponent as Cashier } from "../../common/assets/icons/cashier.svg";
 import { useState } from "react";
-import { IButtons } from "../../common/types/bottomNavbar";
+import { IButtons } from "../../common/interface/buttons";
 
 const ViewModel = () => {
   const [buttons, setButtons] = useState<IButtons[]>([
