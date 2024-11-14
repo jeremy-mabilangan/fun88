@@ -1,4 +1,4 @@
-import { TopNavbar, BottomNavbar, Banner } from "../../components";
+import { TopNavbar, BottomNavbar, Banner, Games } from "../../components";
 
 const Homepage = () => {
   return (
@@ -6,12 +6,13 @@ const Homepage = () => {
       <header>
         <TopNavbar />
       </header>
-      <main>
+      <main className="mt-[60px]">
         <section>
           <Banner />
         </section>
-
-        <section></section>
+        <section>
+          <Games />
+        </section>
       </main>
       <footer className="w-full fixed bottom-0">
         <BottomNavbar />

@@ -5,14 +5,14 @@ const BottomNavbar = () => {
   const { buttons, handleSetActiveButton } = ViewModel();
 
   return (
-    <div className="flex justify-between h-[70px]">
+    <div className="flex justify-between h-[60px] pt-1 bg-white">
       {buttons.map(({ title, active, Icon }, index) => (
         <button
           className="flex-1 group"
           key={index}
           onClick={() => handleSetActiveButton(title)}
         >
-          <div className="px-1 pt-1 pb-1 relative">
+          <div className="pt-1 pb-1 relative">
             <div className="flex justify-center">
               {active && (
                 <img
