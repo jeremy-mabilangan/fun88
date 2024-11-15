@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "https://jeremy-mabilangan.github.io/fun88/static/css/main.ef48ce40.css",
-    "main.js": "https://jeremy-mabilangan.github.io/fun88/static/js/main.559eab4f.js",
+    "main.css": "https://jeremy-mabilangan.github.io/fun88/static/css/main.0f1248a9.css",
+    "main.js": "https://jeremy-mabilangan.github.io/fun88/static/js/main.f06ad35f.js",
     "static/js/453.cca7528e.chunk.js": "https://jeremy-mabilangan.github.io/fun88/static/js/453.cca7528e.chunk.js",
     "static/media/banner.webp": "https://jeremy-mabilangan.github.io/fun88/static/media/banner.c48b0736e2fa1288ea97.webp",
+    "static/media/revicons.eot": "https://jeremy-mabilangan.github.io/fun88/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "https://jeremy-mabilangan.github.io/fun88/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/slots.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/slots.4a75e8774629b14cd67f5160b86b6230.svg",
+    "static/media/revicons.woff": "https://jeremy-mabilangan.github.io/fun88/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/jackpots.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/jackpots.5cab135e8aa62bc4606dd077dc1e8e74.svg",
     "static/media/sports.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/sports.6c7ee680f98c6989e5e7f1b561a1e71c.svg",
     "static/media/new.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/new.b7cff66d25a4bcd6128f1826498ecf8e.svg",
@@ -29,13 +32,15 @@
     "static/media/search.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/search.154bb3ac757d89901105ce46695e0fc1.svg",
     "static/media/divider.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/divider.6f5161cd5ae510c962341761c1c124b7.svg",
     "static/media/active_border.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/active_border.22677851bcc931e23fc35483803c8a8d.svg",
+    "static/media/left-arrow.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/left-arrow.c175347329a0d48949720ef09b441c15.svg",
+    "static/media/right-arrow.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/right-arrow.becd2a8a0ef82b19689cd5778fd57ad9.svg",
     "static/media/mask.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/mask.3183cd2c65ef9668d80583a57a93f352.svg",
-    "main.ef48ce40.css.map": "https://jeremy-mabilangan.github.io/fun88/static/css/main.ef48ce40.css.map",
-    "main.559eab4f.js.map": "https://jeremy-mabilangan.github.io/fun88/static/js/main.559eab4f.js.map",
+    "main.0f1248a9.css.map": "https://jeremy-mabilangan.github.io/fun88/static/css/main.0f1248a9.css.map",
+    "main.f06ad35f.js.map": "https://jeremy-mabilangan.github.io/fun88/static/js/main.f06ad35f.js.map",
     "453.cca7528e.chunk.js.map": "https://jeremy-mabilangan.github.io/fun88/static/js/453.cca7528e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef48ce40.css",
-    "static/js/main.559eab4f.js"
+    "static/css/main.0f1248a9.css",
+    "static/js/main.f06ad35f.js"
   ]
 }
