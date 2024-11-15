@@ -9,11 +9,7 @@ import { ReactComponent as Square } from "../../../common/assets/icons/app_squar
 import { useCallback, useState } from "react";
 import { IButtons } from "../../../common/interface/buttons";
 import { useHomepageContext } from "../../../common/context/useHomepageContext";
-import {
-  SET_GAME,
-  SET_GAME_PROVIDER,
-  SET_SEARCHED_VALUE,
-} from "../../../common/app/config";
+import { SET_GAME, SET_GAME_PROVIDER } from "../../../common/app/config";
 import { debounce } from "../../../common/helpers";
 
 const ViewModel = () => {
@@ -34,7 +30,11 @@ const ViewModel = () => {
 
   const handleSetActiveCategories = useCallback(
     (title: string) => {
-      dispatch({ type: SET_GAME, payload: { data: title, keys: "category" } });
+      dispatch({ type: SET_GAME, payload: { data: title, keys: "category" } }); // Set active category
+      dispatch({
+        type: SET_GAME,
+        payload: { data: "", keys: "search" },
+      }); // Clear search input when changing category
       setSearchActive(false); // Set search button to inactive
       const buttonsList = [...buttons];
 
@@ -58,7 +58,10 @@ const ViewModel = () => {
   }, [searchActive]);
 
   const handleSearch = debounce((e: any) => {
-    dispatch({ type: SET_SEARCHED_VALUE, payload: e?.target?.value });
+    dispatch({
+      type: SET_GAME,
+      payload: { data: e.target.value, keys: "search" },
+    });
   }, 500);
 
   const handleOpenGameProvider = useCallback(() => {

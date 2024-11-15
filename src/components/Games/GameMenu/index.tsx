@@ -3,9 +3,11 @@ import { ReactComponent as Mask } from "../../../common/assets/icons/mask.svg";
 import { ReactComponent as Favorite } from "../../../common/assets/icons/favorite.svg";
 import { ReactComponent as NonFavorite } from "../../../common/assets/icons/non_favorite.svg";
 import ViewModel from "./useViewModel";
+import GameSkeleton from "./GameSkeleton";
+import GameProviderRow from "./GameProviderRow";
 
 const GameMenu = () => {
-  const { gameList, handleFavorite, loading } = ViewModel();
+  const { gameList, handleFavorite, loading, gameProviders } = ViewModel();
 
   return (
     <div className="px-4 pb-[70px]">
@@ -15,6 +17,13 @@ const GameMenu = () => {
         </p>
       )}
       <div className="grid grid-cols-3 gap-3">
+        {loading && (
+          <>
+            <GameSkeleton />
+            <GameSkeleton />
+            <GameSkeleton />
+          </>
+        )}
         {gameList?.map((game: IGames, index) => (
           <div className="relative rounded-lg overflow-hidden" key={index}>
             <button
@@ -25,14 +34,14 @@ const GameMenu = () => {
                 {game.isFavorite ? (
                   <>
                     <Mask className="absolute right-0" />
-                    <span className="z-10 absolute top-1 right-1">
+                    <span className="absolute top-1 right-1">
                       <Favorite width="17" height="15" fill="#FFD703" />
                     </span>
                   </>
                 ) : (
                   <>
                     <Mask className="absolute right-0" />
-                    <span className="z-10 absolute top-1 right-1">
+                    <span className="absolute top-1 right-1">
                       <NonFavorite width="17" height="15" />
                     </span>
                   </>
@@ -43,6 +52,8 @@ const GameMenu = () => {
           </div>
         ))}
       </div>
+
+      {gameProviders?.selected.length ? <GameProviderRow /> : <></>}
     </div>
   );
 };

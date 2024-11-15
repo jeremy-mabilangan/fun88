@@ -13,36 +13,44 @@ const ViewModel = () => {
 
   const gameList = useMemo(() => {
     const category = state?.games?.category;
-    const value = state?.searchedValue?.toLowerCase() || "";
+    const value = state?.games?.search?.toLowerCase() || "";
+    const selectedGameProvider = state?.gameProviders?.selected;
+    let list = state?.games?.list;
+
+    if (selectedGameProvider?.length) {
+      const selectedObj: { [x: number]: number } = {};
+      selectedGameProvider.forEach((s) => (selectedObj[s] = s));
+      list = list?.filter((l) => selectedObj[l.provider]);
+    }
 
     if (category !== "start") {
-      return state?.games?.list.filter(
+      return list?.filter(
         (i) => i.category === category && i.name.toLowerCase().includes(value)
       );
     }
 
-    return state?.games?.list.filter((i) =>
-      i.name.toLowerCase().includes(value)
-    );
+    return list?.filter((i) => i.name.toLowerCase().includes(value));
+  }, [state]);
+
+  const gameProviders = useMemo(() => {
+    return state?.gameProviders;
   }, [state]);
 
   const handleFavorite = useCallback(
     (id: number) => {
-      const newList = state?.games?.list?.reduce(
-        (acc: IGames[], cv: IGames) => {
-          if (cv.id === id) {
-            acc.push({
-              ...cv,
-              isFavorite: !cv.isFavorite,
-            });
-          } else {
-            acc.push(cv);
-          }
+      const newList = state?.games?.list.reduce((acc: IGames[], cv: IGames) => {
+        if (cv.id === id) {
+          acc.push({
+            ...cv,
+            isFavorite:
+              typeof cv.isFavorite === "undefined" ? true : !cv.isFavorite,
+          });
+        } else {
+          acc.push(cv);
+        }
 
-          return acc;
-        },
-        []
-      );
+        return acc;
+      }, []);
 
       newList &&
         dispatch({ type: SET_GAME, payload: { data: newList, keys: "list" } });
@@ -58,7 +66,7 @@ const ViewModel = () => {
     }, 3000);
   }, [dispatch]);
 
-  return { gameList, handleFavorite, loading };
+  return { gameList, handleFavorite, loading, gameProviders };
 };
 
 export default ViewModel;

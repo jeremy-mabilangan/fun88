@@ -1,4 +1,4 @@
-import { SET_GAME, SET_GAME_PROVIDER, SET_SEARCHED_VALUE } from "../app/config";
+import { SET_GAME, SET_GAME_PROVIDER } from "../app/config";
 import { TAction } from "../interface/homepageContextProvider";
 
 export const reducers = (state: any, action: TAction) => {
@@ -19,11 +19,6 @@ export const reducers = (state: any, action: TAction) => {
           ...state.gameProviders,
           [payload.keys]: payload.data,
         },
-      };
-    case SET_SEARCHED_VALUE:
-      return {
-        ...state,
-        searchedValue: payload,
       };
     default:
       return state;
