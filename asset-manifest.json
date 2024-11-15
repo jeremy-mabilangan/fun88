@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://jeremy-mabilangan.github.io/fun88/static/css/main.0f1248a9.css",
-    "main.js": "https://jeremy-mabilangan.github.io/fun88/static/js/main.f06ad35f.js",
+    "main.js": "https://jeremy-mabilangan.github.io/fun88/static/js/main.b40d4a92.js",
     "static/js/453.cca7528e.chunk.js": "https://jeremy-mabilangan.github.io/fun88/static/js/453.cca7528e.chunk.js",
     "static/media/banner.webp": "https://jeremy-mabilangan.github.io/fun88/static/media/banner.c48b0736e2fa1288ea97.webp",
     "static/media/revicons.eot": "https://jeremy-mabilangan.github.io/fun88/static/media/revicons.a77de540a38981833f9e.eot",
@@ -36,11 +36,11 @@
     "static/media/right-arrow.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/right-arrow.becd2a8a0ef82b19689cd5778fd57ad9.svg",
     "static/media/mask.svg": "https://jeremy-mabilangan.github.io/fun88/static/media/mask.3183cd2c65ef9668d80583a57a93f352.svg",
     "main.0f1248a9.css.map": "https://jeremy-mabilangan.github.io/fun88/static/css/main.0f1248a9.css.map",
-    "main.f06ad35f.js.map": "https://jeremy-mabilangan.github.io/fun88/static/js/main.f06ad35f.js.map",
+    "main.b40d4a92.js.map": "https://jeremy-mabilangan.github.io/fun88/static/js/main.b40d4a92.js.map",
     "453.cca7528e.chunk.js.map": "https://jeremy-mabilangan.github.io/fun88/static/js/453.cca7528e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0f1248a9.css",
-    "static/js/main.f06ad35f.js"
+    "static/js/main.b40d4a92.js"
   ]
 }
