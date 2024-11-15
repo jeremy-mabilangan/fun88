@@ -2,7 +2,6 @@ import { createContext, ReactNode, useReducer } from "react";
 import {
   IContextProps,
   IHomepageContext,
-  TAction,
 } from "../interface/homepageContextProvider";
 import { reducers } from "../reducers/homepageReducer";
 
@@ -11,13 +10,14 @@ export const initialState: IContextProps = {
     loading: false,
     list: [],
     category: "start",
+    search: "",
   },
   gameProviders: {
     loading: false,
     show: false,
     list: [],
+    selected: [],
   },
-  searchedValue: "",
 };
 
 export const HomepageRootContext = createContext<IHomepageContext>({
@@ -25,13 +25,12 @@ export const HomepageRootContext = createContext<IHomepageContext>({
   dispatch: () => {},
 });
 
-export const HomepageProvider: React.FC<{ children: ReactNode }> = ({
-  children,
-}) => {
-  const [state, dispatch] = useReducer<React.Reducer<IContextProps, TAction>>(
-    reducers,
-    initialState
-  );
+type HomepageProviderProps = {
+  children: ReactNode;
+};
+
+export const HomepageProvider = ({ children }: HomepageProviderProps) => {
+  const [state, dispatch] = useReducer(reducers, initialState);
 
   return (
     <HomepageRootContext.Provider value={{ state, dispatch }}>

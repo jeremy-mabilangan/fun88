@@ -1,4 +1,5 @@
-import { IGameProviders } from "../GameMenu/interface";
+import { IGameProviders } from "../../../common/interface/games";
+
 const PUBLIC_URL = process.env.PUBLIC_URL;
 
 const list: IGameProviders[] = [
