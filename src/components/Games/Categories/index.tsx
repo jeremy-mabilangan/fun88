@@ -73,7 +73,7 @@ const Categories = () => {
             </div>
             <input
               type="search"
-              className="w-full flex pr-2 rounded-md text-secondary-color outline-0 focus:outline-none"
+              className="w-full flex pr-2 rounded-md bg-white text-secondary-color outline-0 focus:outline-none"
               placeholder="Search games"
               onChange={handleSearch}
             />
