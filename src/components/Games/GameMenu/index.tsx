@@ -48,7 +48,12 @@ const GameMenu = () => {
                 )}
               </div>
             </button>
-            <img className="h-full w-full" alt={game.name} src={game.img} />
+            <img
+              className="h-full w-full"
+              alt={game.name}
+              src={game.img}
+              loading="lazy"
+            />
           </div>
         ))}
       </div>

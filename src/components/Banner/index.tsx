@@ -7,9 +7,9 @@ const Banner = () => {
     <div className="px-4 mt-[5px]">
       <div className="relative">
         <CarouselComponent>
-          <img alt="Banner" src={banner} />
-          <img alt="Banner" src={banner} />
-          <img alt="Banner" src={banner} />
+          <img alt="Banner" src={banner} loading="lazy" />
+          <img alt="Banner" src={banner} loading="lazy" />
+          <img alt="Banner" src={banner} loading="lazy" />
         </CarouselComponent>
       </div>
 
